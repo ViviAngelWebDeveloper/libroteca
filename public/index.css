@@ -1,0 +1,86 @@
+:root {
+    --bg-color: #d5c5ae;
+    --primary-color: #b18653;
+    --secondary-color: #47596f;
+    --third-color: #54101d;
+    --fourth-color: #312229;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: var(--bg-color);
+}
+
+.contenedortitulo{
+    background-image: url("books.png");
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    color: var(--bg-color);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transform: scale(1.2);
+}
+
+.subtitulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contenedor {
+    color: var(--bg-color);
+    max-width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: var(--third-color);
+}
+
+h2{
+    margin: 0px 0px 30px 0px;
+    transform: scale(1.2);
+}
+
+.botonexterno {
+    margin: 20px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.2);
+}
+
+button {
+    border-style: none;
+    color: var(--bg-color);
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #931c33;
+}
+
+input{
+    border-style: none;
+    border-radius: 2px;
+    padding: 5px;
+    width: 15%;
+}
+
+.form{
+    display: flex;
+    justify-content: space-around;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Libroteca</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="contenedortitulo">
+      <h1 class="titulo">Sistema de Gestión de Libros</h1>
+    </div>
+
+    <!-- Registrar Libros -->
+    <div id="app" class="contenedor">
+      <h2 class="subtitulo">Registro de Libros</h2>
+      <form id="book-form" class="form">
+        <input type="text" id="book-title" placeholder="Título" required />
+        <input type="text" id="book-author" placeholder="Autor" required />
+        <input type="number" id="book-year" placeholder="Año" required />
+        <input type="text" id="book-genre" placeholder="Género" required />
+        <input
+          type="url"
+          id="book-cover"
+          placeholder="URL de la Portada"
+          required
+        />
+        <button type="submit">Agregar Libro</button>
+      </form>
+    </div>
+    <div class="botonexterno">
+      <button onclick="window.location.href='books.html'">Ver Libros</button>
+    </div>
+
+    <!-- Registrar Usuarios -->
+    <div class="contenedor">
+      <h2 class="subtitulo">Usuarios Registrados</h2>
+      <form id="register-form">
+        <input type="text" id="username" placeholder="Nombre" required />
+        <input type="text" id="lastname" placeholder="Apellido" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="date" id="birthday" placeholder="Fecha Nac" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Contraseña"
+          required
+        />
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+    <div class="botonexterno">
+      <button onclick="window.location.href='users.html'">Ver Usuarios</button>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Libros</title>
+    <link rel="stylesheet" href="listas.css">
+</head>
+<body>
+    <h1 class="titulo">Listado de Libros</h1>
+    <ul id="book-list"></ul>
+    <button onclick="window.location.href='index.html'">Volver</button>
+
+    <!-- Modal para editar libro -->
+    <div id="editBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('editBookModal')">&times;</span>
+            <h2 class="subtitulo">Editar Libro</h2>
+            <form id="edit-book-form">
+                <input type="hidden" id="edit-book-id">
+                <input type="text" id="edit-book-title" placeholder="Título" required>
+                <input type="text" id="edit-book-author" placeholder="Autor" required>
+                <input type="number" id="edit-book-year" placeholder="Año" required>
+                <input type="text" id="edit-book-genre" placeholder="Género" required>
+                <input type="url" id="edit-book-cover" placeholder="URL de la Portada" required>
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
